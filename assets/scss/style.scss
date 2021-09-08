@@ -287,7 +287,6 @@ button{
     overflow: auto;
     padding: 0 150px 0 10px;
     z-index: 999;
-    background-color: #1876F2;
 
     &::-webkit-scrollbar{
         width: 7px;
@@ -381,6 +380,7 @@ button{
     height: 400px;
     background-color:#F02849;
     margin: 0 .4rem;
+    padding: 0 0 0 6rem;
 }
 
 
