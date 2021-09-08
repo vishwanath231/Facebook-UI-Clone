@@ -67,6 +67,10 @@ button{
 
         li:nth-child(1) {
             margin-right: 1rem;
+
+            @media(max-width:375px) {
+                margin-right: .2rem;
+            }
         }
     }
     
@@ -173,6 +177,9 @@ button{
         @media(max-width:1083px) {
             display: block;
         }
+        @media(max-width:320px) {
+            display: none;
+        }
     }
 
     
@@ -187,6 +194,7 @@ button{
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
+
 }
 
 .section-3{
@@ -245,6 +253,10 @@ button{
         .account {
             @include navbar-icon();
             background-position: -42px -88px;
+        }
+
+        @media(max-width:375px) {
+            margin: 0 .2rem;
         }
     }
 }
