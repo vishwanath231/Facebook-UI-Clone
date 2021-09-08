@@ -309,7 +309,7 @@ button {
   position: -webkit-sticky;
   position: sticky;
   top: 5rem;
-  height: 90vh;
+  height: 88vh;
   margin: 0 .4rem;
   display: block;
   overflow: auto;
@@ -345,7 +345,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin: .3rem 0;
-  padding: 9px;
+  padding: 8px;
   border-radius: 3px;
 }
 
