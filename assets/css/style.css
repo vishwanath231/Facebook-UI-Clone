@@ -264,23 +264,17 @@ button {
 }
 
 .section-3 ul li .menu {
-  width: 20px;
-  height: 20px;
-  background: url("../img/W8VX4aUw2vn.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-position: -84px -67px;
+  margin-top: -2px;
 }
 
-.section-3 ul li .account {
-  width: 20px;
-  height: 20px;
-  background: url("../img/W8VX4aUw2vn.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  display: inline-block;
-  background-position: -42px -88px;
+.section-3 ul li .menu i {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 -2px;
+}
+
+.section-3 ul li .account i {
+  font-size: 27px;
 }
 
 @media (max-width: 375px) {
