@@ -291,6 +291,7 @@ button{
     &::-webkit-scrollbar{
         width: 7px;
         display: none;
+        z-index: 99;
     }
     &:hover::-webkit-scrollbar {
         display: block;
