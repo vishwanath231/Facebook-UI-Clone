@@ -108,7 +108,7 @@ button {
 .section-1 .search__bar input {
   border: none;
   background: transparent;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   border-radius: 20px;
   font-size: 15px;
   font-weight: 400;
@@ -260,7 +260,7 @@ button {
 }
 
 .section-3 ul li {
-  margin: 0 .5rem;
+  margin: 0 .2rem;
 }
 
 .section-3 ul li .menu {
@@ -280,5 +280,56 @@ button {
 @media (max-width: 375px) {
   .section-3 ul li {
     margin: 0 .2rem;
+  }
+}
+
+/*====================
+    CONTAINER
+========================*/
+.container {
+  padding-top: 80px;
+}
+
+.container .grid__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 370px auto 400px;
+      grid-template-columns: 370px auto 400px;
+}
+
+@media (max-width: 768px) {
+  .container .grid__box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.left__box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  height: 400px;
+  background-color: #1876F2;
+}
+
+.main__box {
+  background-color: #65676B;
+  margin: 0 15px;
+}
+
+.right__box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  height: 400px;
+  background-color: #F02849;
+}
+
+@media (max-width: 768px) {
+  .left__box {
+    display: none;
+  }
+  .right__box {
+    display: none;
   }
 }
