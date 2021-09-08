@@ -269,7 +269,7 @@ button{
 
     .grid__box{
         display: grid;
-        grid-template-columns: 370px auto 400px;
+        grid-template-columns: 250px auto 390px;
 
         @media(max-width:768px) {
             grid-template-columns: 1fr;
@@ -280,9 +280,92 @@ button{
 .left__box{
     position: sticky;
     top: 5rem;
-    height: 400px;
-    background-color: #1876F2;
+    height: 90vh;
+    margin:0 .4rem;
+    display: block;
+    overflow: auto;
+    padding: 0 10px;
+
+    &::-webkit-scrollbar{
+        width: 7px;
+        display: none;
+    }
+    &:hover::-webkit-scrollbar {
+        display: block;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #d9dadb;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #bebebe;
+        border-radius: 10px;
+    }
+
+
+    .left__icon{
+        display: flex;
+        align-items: center;
+        margin: .3rem 0;
+        padding: 9px;
+        border-radius: 3px;
+        
+        &:hover{
+            cursor: pointer;
+            background: lightgray;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+        }
+
+        p{
+            margin: 0 .4rem;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+    }
+
+    #showmore__icon {
+        display: none;
+    }
+
+    #showmore__icon.active{
+        display: block;
+    }
+
+    #show{
+        padding: 10px;
+        background-color: #bebebe;
+        border-radius: 6px;
+
+        i{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background: #9e9fa0;
+            text-align: center;
+            line-height: 30px;
+            font-size: 18px;
+        }
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .main__box{
     background-color: #65676B;
     margin: 0 15px;
@@ -293,10 +376,11 @@ button{
     top: 5rem;
     height: 400px;
     background-color:#F02849;
+    margin: 0 .4rem;
 }
 
 
-@media(max-width:768px) {
+@media(max-width:1083px) {
     
     .left__box{
         display: none;
