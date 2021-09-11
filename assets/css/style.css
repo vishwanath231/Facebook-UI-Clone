@@ -294,11 +294,11 @@ button {
 .container .grid__box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 700px auto;
-      grid-template-columns: auto 700px auto;
+  -ms-grid-columns: auto 700px 300px;
+      grid-template-columns: auto 700px 300px;
 }
 
-@media (max-width: 1083px) {
+@media (max-width: 1183px) {
   .container .grid__box {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -313,7 +313,7 @@ button {
   margin: 0 .4rem;
   display: block;
   overflow: auto;
-  padding: 0 150px 0 10px;
+  padding: 0 10px 0 10px;
   z-index: 999;
 }
 
@@ -344,7 +344,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .3rem 0;
+  margin: .2rem 0;
   padding: 8px;
   border-radius: 3px;
 }
@@ -375,6 +375,13 @@ button {
 }
 
 .left__box #show {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   background-color: #bebebe;
   border-radius: 6px;
@@ -388,11 +395,20 @@ button {
   text-align: center;
   line-height: 30px;
   font-size: 18px;
+  margin-right: 10px;
 }
 
 .main__box {
   background-color: #65676B;
   margin: 0 15px;
+}
+
+@media (max-width: 1183px) {
+  .main__box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 .right__box {
@@ -402,10 +418,11 @@ button {
   height: 400px;
   background-color: #F02849;
   margin: 0 .4rem;
-  padding: 0 0 0 6rem;
+  padding: 10px;
+  z-index: -9;
 }
 
-@media (max-width: 1083px) {
+@media (max-width: 1183px) {
   .left__box {
     display: none;
   }

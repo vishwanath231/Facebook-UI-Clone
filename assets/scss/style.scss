@@ -270,9 +270,10 @@ button{
 
     .grid__box{
         display: grid;
-        grid-template-columns: auto 700px auto;
+        grid-template-columns: auto 700px 300px;
 
-        @media(max-width:1083px) {
+        
+        @media(max-width:1183px) {
             grid-template-columns: 1fr;
         }
     }
@@ -285,7 +286,7 @@ button{
     margin:0 .4rem;
     display: block;
     overflow: auto;
-    padding: 0 150px 0 10px;
+    padding: 0 10px 0 10px;
     z-index: 999;
 
     &::-webkit-scrollbar{
@@ -309,7 +310,7 @@ button{
     .left__icon{
         display: flex;
         align-items: center;
-        margin: .3rem 0;
+        margin: .2rem 0;
         padding: 8px;
         border-radius: 3px;
         
@@ -341,6 +342,9 @@ button{
     }
 
     #show{
+        width: 100%;
+        display: flex;
+        align-items:center;
         padding: 10px;
         background-color: #bebebe;
         border-radius: 6px;
@@ -353,8 +357,11 @@ button{
             text-align: center;
             line-height: 30px;
             font-size: 18px;
+            margin-right: 10px;
         }
     }
+
+   
 
 }
 
@@ -373,6 +380,12 @@ button{
     background-color: #65676B;
     margin: 0 15px;
 
+    @media(max-width:1183px) {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
 }
 .right__box{
     position: sticky;
@@ -380,11 +393,12 @@ button{
     height: 400px;
     background-color:#F02849;
     margin: 0 .4rem;
-    padding: 0 0 0 6rem;
+    padding: 10px;
+    z-index: -9;
 }
 
 
-@media(max-width:1083px) {
+@media(max-width:1183px) {
     
     .left__box{
         display: none;
